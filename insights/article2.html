@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Client Onboarding at Scale: How Top RIAs Do It | RIAWorkflow.com</title>
+<meta name="description" content="The best RIAs onboard clients in days, not weeks. Inside the automated onboarding workflows that top firms use to scale — without sacrificing experience.">
+<meta property="og:title" content="Client Onboarding at Scale: How Top RIAs Do It">
+<meta property="og:description" content="The best RIAs onboard clients in days, not weeks. Inside the automated onboarding workflows that top firms use to scale — without sacrificing experience.">
+<meta property="og:image" content="../images/photo1.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "Article", "headline": "Client Onboarding at Scale: How Top RIAs Do It", "description": "The best RIAs onboard clients in days, not weeks. Inside the automated onboarding workflows that top firms use to scale \u2014 without sacrificing experience.", "author": {"@type": "Organization", "name": "Prime Domain Capital"}}
+</script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--blue:#2563eb;--ink:#0f172a;--paper:#ffffff;--gray:#f1f5f9;--mut:#64748b}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:var(--paper);color:var(--ink);overflow-x:hidden}
+.mono{font-family:'IBM Plex Mono',monospace}
+#flow{position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.5}
+nav{position:fixed;top:0;width:100%;z-index:100;display:flex;justify-content:space-between;align-items:center;padding:1.1rem 3rem;background:rgba(255,255,255,.88);backdrop-filter:blur(14px);border-bottom:1px solid #e2e8f0}
+nav .b{font-weight:700;letter-spacing:-.02em;font-size:1.05rem}
+nav .b span{color:var(--blue)}
+nav a{background:var(--ink);color:#fff;padding:.6rem 1.6rem;text-decoration:none;font-size:.82rem;font-weight:600;letter-spacing:.06em;border-radius:6px;transition:.3s}
+nav a:hover{background:var(--blue);transform:translateY(-2px)}
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden;background:linear-gradient(180deg,#f8fafc 0%,#eef2f7 100%)}
+.hero .in{position:relative;z-index:2;max-width:1150px;margin:0 auto;padding:7rem 3rem 4rem;width:100%;display:grid;grid-template-columns:1.1fr .9fr;gap:4rem;align-items:center}
+.hero .ey{font-family:'IBM Plex Mono',monospace;font-size:.72rem;letter-spacing:.3em;color:var(--blue);margin-bottom:1.3rem;font-weight:500}
+.hero h1{font-size:clamp(2.6rem,5.8vw,4.6rem);font-weight:700;letter-spacing:-.03em;line-height:1.06}
+.hero h1 span{color:var(--blue)}
+.hero p{margin:1.4rem 0 2.2rem;color:var(--mut);font-size:1.08rem;font-weight:300;max-width:480px}
+.hero img{width:100%;border-radius:12px;box-shadow:0 30px 70px rgba(15,23,42,.16)}
+.btn{display:inline-block;padding:1rem 2.7rem;text-decoration:none;font-size:.9rem;font-weight:600;letter-spacing:.04em;border-radius:8px;transition:.3s}
+.btn-b{background:var(--blue);color:#fff}
+.btn-b:hover{transform:translateY(-3px);box-shadow:0 14px 32px rgba(37,99,235,.4)}
+.btn-o{border:1.5px solid #cbd5e1;color:var(--ink);margin-left:.9rem}
+.btn-o:hover{border-color:var(--blue);color:var(--blue)}
+section{position:relative;z-index:1;max-width:1150px;margin:0 auto;padding:5rem 3rem}
+.rv{opacity:0;transform:translateY(32px);transition:.8s cubic-bezier(.2,.7,.3,1)}
+.rv.on{opacity:1;transform:none}
+.ey2{font-family:'IBM Plex Mono',monospace;font-size:.7rem;letter-spacing:.28em;color:var(--blue);text-transform:uppercase;margin-bottom:1rem;font-weight:500}
+h2{font-size:clamp(1.9rem,3.6vw,2.9rem);font-weight:700;letter-spacing:-.025em;line-height:1.15;margin-bottom:1.2rem}
+h2 span{color:var(--blue)}
+.lead{color:var(--mut);font-size:1.05rem;font-weight:300;max-width:680px}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem;margin:3rem 0}
+.step{background:var(--gray);border-radius:10px;padding:2rem 1.6rem;position:relative;transition:.3s;border:1px solid transparent}
+.step:hover{border-color:var(--blue);transform:translateY(-4px);background:#fff;box-shadow:0 14px 36px rgba(15,23,42,.08)}
+.step .n{font-family:'IBM Plex Mono',monospace;font-size:.75rem;color:var(--blue);font-weight:500}
+.step h3{font-size:1.05rem;margin:.7rem 0 .5rem}
+.step p{font-size:.88rem;color:var(--mut);font-weight:300}
+.metric{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;margin:2.5rem 0}
+.metric .m{background:var(--ink);color:#fff;border-radius:10px;padding:2.4rem;text-align:center}
+.metric .v{font-size:2.4rem;font-weight:700;color:#93c5fd}
+.metric .l{font-size:.78rem;color:#94a3b8;margin-top:.4rem;letter-spacing:.06em}
+.shots{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;margin:2.5rem 0}
+.shots img{width:100%;height:260px;object-fit:cover;border-radius:10px;transition:.4s}
+.shots img:hover{transform:scale(1.03);box-shadow:0 16px 40px rgba(15,23,42,.14)}
+.aud{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;margin-top:2rem}
+.acard{border:1.5px solid #e2e8f0;border-radius:10px;padding:2.4rem;transition:.3s}
+.acard:hover{border-color:var(--blue);box-shadow:0 14px 36px rgba(37,99,235,.1)}
+.acard .tag{font-family:'IBM Plex Mono',monospace;font-size:.68rem;letter-spacing:.22em;color:var(--blue)}
+.acard h3{font-size:1.2rem;margin:.7rem 0 .6rem;letter-spacing:-.01em}
+.acard p{font-size:.9rem;color:var(--mut);font-weight:300}
+.buy{background:var(--ink);border-radius:14px;padding:4.5rem 3rem;text-align:center;color:#fff;margin:3rem 0}
+.buy .pr{font-size:3.2rem;font-weight:700;color:#93c5fd;margin:1.2rem 0;letter-spacing:-.02em}
+footer{text-align:center;padding:2.5rem;color:var(--mut);font-size:.83rem;border-top:1px solid #e2e8f0}
+footer a{color:var(--blue);text-decoration:none}
+@media(max-width:860px){.hero .in,.steps,.metric,.aud,.shots{grid-template-columns:1fr}section{padding:3.5rem 1.5rem}nav{padding:1rem 1.2rem}.btn-o{margin-left:0;margin-top:.8rem}.hero .in{padding:6rem 1.5rem 3rem}}
+</style>
+<style>
+.article-hero{max-width:900px;margin:0 auto;padding:9rem 3rem 2.5rem;position:relative;z-index:1}
+.article-hero h1{font-weight:700;font-size:clamp(2.1rem,4.4vw,3.3rem);line-height:1.12;letter-spacing:-.025em;margin:0 0 1.2rem}
+.article-meta{font-family:'IBM Plex Mono',monospace;font-size:.75rem;letter-spacing:.22em;text-transform:uppercase;color:var(--mut)}
+.article-wrap{max-width:720px;margin:0 auto;padding:1rem 3rem 4rem;position:relative;z-index:1}
+.article-body{font-size:1.06rem;line-height:1.8;color:#334155;font-weight:300}
+.article-body p{margin:0 0 1.6rem}
+.article-body h2{font-size:1.75rem;margin:3rem 0 1.2rem;letter-spacing:-.02em}
+blockquote.pull{font-size:1.4rem;line-height:1.55;color:var(--ink);border-left:3px solid var(--blue);padding-left:1.7rem;margin:2.6rem 0;font-weight:400}
+.callout{background:var(--ink);color:#fff;border-radius:12px;padding:2.8rem;text-align:center;margin:3.5rem auto;max-width:720px;position:relative;z-index:1}
+.callout p{font-size:1.2rem;line-height:1.65;margin-bottom:1.6rem}
+.card-link{color:var(--blue);font-weight:600;text-decoration:none;font-size:.88rem;letter-spacing:.04em}
+.card-link:hover{text-decoration:underline}
+</style>
+</head>
+<body>
+<canvas id="flow"></canvas>
+<nav><a class="b" href="../index.html" style="text-decoration:none">RIA<span>WORKFLOW</span></a><a href="https://www.afternic.com/domain/riaworkflow.com">ACQUIRE — $12,500</a></nav>
+
+<header class="article-hero rv">
+  <div class="ey2">Insights</div>
+  <h1>Client Onboarding at Scale: How Top RIAs Do It</h1>
+  <div class="article-meta">RIA client onboarding &middot; 4 min read</div>
+</header>
+
+<div class="article-wrap rv">
+  <div class="article-body">
+<p>The first 30 days of a client relationship determine its trajectory. McKinsey&#x27;s wealth management research has consistently shown that clients who experience a smooth onboarding process have higher satisfaction, consolidate more assets, and refer more frequently than those who don&#x27;t. Yet most RIAs treat onboarding as an administrative hurdle rather than a strategic moment — and the numbers show it. Industry surveys put the average time from signed agreement to fully funded account at 3 to 6 weeks. The best firms do it in 5 to 10 days.</p>
+<p>That gap — weeks versus days — is entirely a workflow problem. And it&#x27;s solvable.</p>
+<h2>Anatomy of a 10-Day Onboarding</h2>
+<p>The fastest RIAs have deconstructed onboarding into a precise sequence, with automation handling the standard path and humans handling only exceptions. Here&#x27;s what it looks like:</p>
+<p><strong>Day 0-1: Digital intake.</strong> The client completes a guided digital workflow — risk tolerance questionnaire, financial goals, household information, beneficiary designations — before the first substantive meeting. The best firms use tools that pre-populate from prior interactions and validate in real time (flagging, for instance, when a stated risk tolerance contradicts the client&#x27;s actual holdings). This isn&#x27;t a PDF; it&#x27;s a structured data capture that feeds every downstream system.</p>
+<p><strong>Day 1-3: Account opening.</strong> Custodial account applications generate automatically from the intake data — Schwab&#x27;s Institutional Intelligent Onboarding, Fidelity&#x27;s automated account opening, Pershing&#x27;s straight-through processing. The client e-signs (DocuSign or custodian-native). For standard account types (individual, joint, IRA), no human touches the paperwork. Complex cases — trusts, business entities, non-resident aliens — route to a specialist with the standard data pre-filled.</p>
+<p><strong>Day 3-7: Asset transfer.</strong> ACAT transfers initiate automatically upon account opening. The workflow engine tracks each transfer, follows up on rejections (the most common: cost-basis mismatches, which the system flags for the operations team), and escalates stalled transfers on a defined timeline. The critical innovation: the client sees a transfer tracker — a simple status page showing each account&#x27;s progress. Transparency eliminates the anxious phone calls that used to consume advisor time.</p>
+<p><strong>Day 5-10: Funding and investment.</strong> As assets arrive, the rebalancing engine (often the portfolio accounting system&#x27;s built-in tools, or a dedicated overlay) brings the portfolio to target. Cash is invested per the investment policy statement. The advisor reviews — not assembles — the final allocation.</p>
+<p><strong>Day 10: Welcome and first review scheduling.</strong> Automated welcome sequence: personal video from the advisor (recorded once, personalized with merge fields), portal credentials, mobile app setup guide, and the first quarterly review already scheduled. The client feels onboarded, not processed.</p>
+<h2>Where Firms Get Stuck</h2>
+<blockquote class="pull">&quot;Onboarding breaks at the handoffs. Every time a process moves from one person to another, or one system to another, without automation, you lose days and introduce errors.&quot;</blockquote>
+<p>The most common failure points are predictable:</p>
+<p><strong>Custodian integration gaps.</strong> Not all custodians offer equal automation. Firms custodying across three or four platforms often find that the workflow is seamless at Schwab but manual at a smaller custodian. The solution is either custodian consolidation (controversial but effective) or investing in the integration layer to normalize across custodians.</p>
+<p><strong>The trust and entity bottleneck.</strong> Standard individual accounts can be fully automated. Trusts, LLCs, and business entities require document review — trust agreements, operating agreements, entity resolutions — that resists full automation. Best practice: create a dedicated complex-entity workflow with checklists, template libraries, and a specialist team, rather than letting these cases clog the standard pipeline.</p>
+<p><strong>Advisor as bottleneck.</strong> In many firms, the advisor insists on personally reviewing every document before it goes to the client. This is well-intentioned and operationally fatal. The solution is exception-based review: the advisor sees only what the system flags (unusual risk profiles, large concentrated positions, complex entities), and everything standard flows through. This requires trust in the system — which requires the system to earn it through consistent accuracy.</p>
+<h2>The Experience Dividend</h2>
+<p>The firms that have cracked onboarding at scale report benefits beyond efficiency. <strong>Faster time to revenue</strong>: every week of onboarding delay is a week of forgone management fees. On a $2 million household at 1%, each week costs roughly $385 in annualized revenue — trivial per household, material across hundreds. <strong>Higher consolidation rates</strong>: clients who experience seamless onboarding consolidate held-away assets faster. One $8 billion RIA found that clients onboarded through its automated workflow brought in 40% more held-away assets in the first year than those onboarded manually — because the experience built confidence. <strong>Referral velocity</strong>: the onboarding experience is the client&#x27;s first story about your firm. Make it remarkable and they tell it.</p>
+<p>The deeper point: onboarding is the only workflow every client experiences. Portfolio management varies by client; financial planning varies by complexity. But everyone goes through onboarding. It is the firm&#x27;s signature — the operational equivalent of a handshake. The firms that treat it as a strategic capability, not an administrative task, are building an advantage that compounds with every new relationship.</p>
+  </div>
+</div>
+
+<div class="callout rv">
+  <p>RIAWorkflow.com is available for acquisition by RIA technology providers, custodians, and consulting firms serving the registered investment adviser market.</p>
+  <a class="btn btn-b" href="https://www.afternic.com/domain/riaworkflow.com">Buy Now on Afternic</a>
+</div>
+
+<section class="rv">
+  <div class="ey2">Who Builds</div>
+  <h2>Three buyers, <span>one workflow.</span></h2>
+  <div class="aud">
+    <div class="acard"><div class="tag">BUILDER 01</div><h3>Wealthtech SaaS</h3><p>The category-defining brand for an RIA workflow platform. The demo starts at the domain.</p></div>
+    <div class="acard"><div class="tag">BUILDER 02</div><h3>Custodians</h3><p>Schwab, Fidelity, Pershing-class: brand the advisor technology suite around the name advisors search.</p></div>
+    <div class="acard"><div class="tag">BUILDER 03</div><h3>RIA Aggregators</h3><p>Standardize operations across dozens of acquired practices under one workflow brand.</p></div>
+  </div>
+</section>
+
+<section class="rv">
+  <div class="buy">
+    <div class="ey2">Acquisition</div>
+    <h2 style="color:#fff">Fixed price. Clean transfer.</h2>
+    <div class="pr">$12,500</div>
+    <a class="btn btn-b" href="https://www.afternic.com/domain/riaworkflow.com">Buy Now on Afternic</a>
+    <p style="margin-top:1.6rem;color:#94a3b8;font-size:.9rem"><a href="mailto:info@primedomaincapital.com" style="color:#93c5fd">info@primedomaincapital.com</a></p>
+  </div>
+</section>
+
+<footer>Offered by <strong>Prime Domain Capital</strong> · <a href="mailto:info@primedomaincapital.com">info@primedomaincapital.com</a></footer>
+
+<script>
+const c=document.getElementById('flow'),g=c.getContext('2d');let W,H;const N=[];
+function sz(){W=c.width=innerWidth;H=c.height=innerHeight}sz();addEventListener('resize',sz);
+for(let i=0;i<10;i++)N.push({x:Math.random()*innerWidth,y:Math.random()*innerHeight,r:3+Math.random()*3});
+(function dr(){g.clearRect(0,0,W,H);N.forEach((n,i)=>{n.x+=.6;if(n.x>W+20){n.x=-20;n.y=Math.random()*H}g.fillStyle='rgba(37,99,235,.5)';g.beginPath();g.arc(n.x,n.y,n.r,0,7);g.fill();const nx=N[(i+1)%N.length];g.strokeStyle='rgba(37,99,235,.22)';g.lineWidth=1.5;g.beginPath();g.moveTo(n.x,n.y);g.lineTo(nx.x,nx.y);g.stroke()});requestAnimationFrame(dr)})();
+const io=new IntersectionObserver(e=>e.forEach(n=>{if(n.isIntersecting){n.target.classList.add('on');io.unobserve(n.target)}}),{threshold:.12});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+
+</script>
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "5fb51d1999084c91989809d7608061e0"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
