@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Outsourced Operations vs. In-House: What RIAs Actually Pay for Back-Office Support | RIAWorkflow.com</title>
+<meta name="description" content="Cost and service levels of outsourced back-office providers vs. in-house teams — and the firm-size threshold where each model wins.">
+<link rel="canonical" href="https://riaworkflow.com/insights/article8">
+<meta property="og:title" content="Outsourced Operations vs. In-House: What RIAs Actually Pay for Back-Office Support">
+<meta property="og:description" content="Cost and service levels of outsourced back-office providers vs. in-house teams — and the firm-size threshold where each model wins.">
+<meta property="og:url" content="https://riaworkflow.com/insights/article8">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Outsourced Operations vs. In-House: What RIAs Actually Pay for Back-Office Support", "description": "Cost and service levels of outsourced back-office providers vs. in-house teams — and the firm-size threshold where each model wins.", "author": {"@type": "Organization", "name": "Prime Domain Capital"}, "publisher": {"@type": "Organization", "name": "Prime Domain Capital"}, "datePublished": "2026-11-19", "mainEntityOfPage": "https://riaworkflow.com/insights/article8"}</script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=IBM+Plex+Mono:wght@300;400;500&amp;display=swap" rel="stylesheet">
+<style>
+:root{--blue:#2563eb;--ink:#0f172a;--paper:#ffffff;--gray:#f1f5f9;--mut:#64748b}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:var(--paper);color:var(--ink);overflow-x:hidden}
+.mono{font-family:'IBM Plex Mono',monospace}
+#flow{position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.5}
+nav{position:fixed;top:0;width:100%;z-index:100;display:flex;justify-content:space-between;align-items:center;padding:1.1rem 3rem;background:rgba(255,255,255,.88);backdrop-filter:blur(14px);border-bottom:1px solid #e2e8f0}
+nav .b{font-weight:700;letter-spacing:-.02em;font-size:1.05rem}
+nav .b span{color:var(--blue)}
+nav a{background:var(--ink);color:#fff;padding:.6rem 1.6rem;text-decoration:none;font-size:.82rem;font-weight:600;letter-spacing:.06em;border-radius:6px;transition:.3s}
+nav a:hover{background:var(--blue);transform:translateY(-2px)}
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden;background:linear-gradient(180deg,#f8fafc 0%,#eef2f7 100%)}
+.hero .in{position:relative;z-index:2;max-width:1150px;margin:0 auto;padding:7rem 3rem 4rem;width:100%;display:grid;grid-template-columns:1.1fr .9fr;gap:4rem;align-items:center}
+.hero .ey{font-family:'IBM Plex Mono',monospace;font-size:.72rem;letter-spacing:.3em;color:var(--blue);margin-bottom:1.3rem;font-weight:500}
+.hero h1{font-size:clamp(2.6rem,5.8vw,4.6rem);font-weight:700;letter-spacing:-.03em;line-height:1.06}
+.hero h1 span{color:var(--blue)}
+.hero p{margin:1.4rem 0 2.2rem;color:var(--mut);font-size:1.08rem;font-weight:300;max-width:480px}
+.hero img{width:100%;border-radius:12px;box-shadow:0 30px 70px rgba(15,23,42,.16)}
+.btn{display:inline-block;padding:1rem 2.7rem;text-decoration:none;font-size:.9rem;font-weight:600;letter-spacing:.04em;border-radius:8px;transition:.3s}
+.btn-b{background:var(--blue);color:#fff}
+.btn-b:hover{transform:translateY(-3px);box-shadow:0 14px 32px rgba(37,99,235,.4)}
+.btn-o{border:1.5px solid #cbd5e1;color:var(--ink);margin-left:.9rem}
+.btn-o:hover{border-color:var(--blue);color:var(--blue)}
+section{position:relative;z-index:1;max-width:1150px;margin:0 auto;padding:5rem 3rem}
+.rv{opacity:0;transform:translateY(32px);transition:.8s cubic-bezier(.2,.7,.3,1)}
+.rv.on{opacity:1;transform:none}
+.ey2{font-family:'IBM Plex Mono',monospace;font-size:.7rem;letter-spacing:.28em;color:var(--blue);text-transform:uppercase;margin-bottom:1rem;font-weight:500}
+h2{font-size:clamp(1.9rem,3.6vw,2.9rem);font-weight:700;letter-spacing:-.025em;line-height:1.15;margin-bottom:1.2rem}
+h2 span{color:var(--blue)}
+.lead{color:var(--mut);font-size:1.05rem;font-weight:300;max-width:680px}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem;margin:3rem 0}
+.step{background:var(--gray);border-radius:10px;padding:2rem 1.6rem;position:relative;transition:.3s;border:1px solid transparent}
+.step:hover{border-color:var(--blue);transform:translateY(-4px);background:#fff;box-shadow:0 14px 36px rgba(15,23,42,.08)}
+.step .n{font-family:'IBM Plex Mono',monospace;font-size:.75rem;color:var(--blue);font-weight:500}
+.step h3{font-size:1.05rem;margin:.7rem 0 .5rem}
+.step p{font-size:.88rem;color:var(--mut);font-weight:300}
+.metric{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;margin:2.5rem 0}
+.metric .m{background:var(--ink);color:#fff;border-radius:10px;padding:2.4rem;text-align:center}
+.metric .v{font-size:2.4rem;font-weight:700;color:#93c5fd}
+.metric .l{font-size:.78rem;color:#94a3b8;margin-top:.4rem;letter-spacing:.06em}
+.shots{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;margin:2.5rem 0}
+.shots img{width:100%;height:260px;object-fit:cover;border-radius:10px;transition:.4s}
+.shots img:hover{transform:scale(1.03);box-shadow:0 16px 40px rgba(15,23,42,.14)}
+.aud{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;margin-top:2rem}
+.acard{border:1.5px solid #e2e8f0;border-radius:10px;padding:2.4rem;transition:.3s}
+.acard:hover{border-color:var(--blue);box-shadow:0 14px 36px rgba(37,99,235,.1)}
+.acard .tag{font-family:'IBM Plex Mono',monospace;font-size:.68rem;letter-spacing:.22em;color:var(--blue)}
+.acard h3{font-size:1.2rem;margin:.7rem 0 .6rem;letter-spacing:-.01em}
+.acard p{font-size:.9rem;color:var(--mut);font-weight:300}
+.buy{background:var(--ink);border-radius:14px;padding:4.5rem 3rem;text-align:center;color:#fff;margin:3rem 0}
+.buy .pr{font-size:3.2rem;font-weight:700;color:#93c5fd;margin:1.2rem 0;letter-spacing:-.02em}
+footer{text-align:center;padding:2.5rem;color:var(--mut);font-size:.83rem;border-top:1px solid #e2e8f0}
+footer a{color:var(--blue);text-decoration:none}
+@media(max-width:860px){.hero .in,.steps,.metric,.aud,.shots{grid-template-columns:1fr}section{padding:3.5rem 1.5rem}nav{padding:1rem 1.2rem}.btn-o{margin-left:0;margin-top:.8rem}.hero .in{padding:6rem 1.5rem 3rem}}
+</style>
+<style>
+.article-hero{max-width:900px;margin:0 auto;padding:9rem 3rem 2.5rem;position:relative;z-index:1}
+.article-hero h1{font-weight:700;font-size:clamp(2.1rem,4.4vw,3.3rem);line-height:1.12;letter-spacing:-.025em;margin:0 0 1.2rem}
+.article-meta{font-family:'IBM Plex Mono',monospace;font-size:.75rem;letter-spacing:.22em;text-transform:uppercase;color:var(--mut)}
+.article-wrap{max-width:720px;margin:0 auto;padding:1rem 3rem 4rem;position:relative;z-index:1}
+.article-body{font-size:1.06rem;line-height:1.8;color:#334155;font-weight:300}
+.article-body p{margin:0 0 1.6rem}
+.article-body h2{font-size:1.75rem;margin:3rem 0 1.2rem;letter-spacing:-.02em}
+blockquote.pull{font-size:1.4rem;line-height:1.55;color:var(--ink);border-left:3px solid var(--blue);padding-left:1.7rem;margin:2.6rem 0;font-weight:400}
+.callout{background:var(--ink);color:#fff;border-radius:12px;padding:2.8rem;text-align:center;margin:3.5rem auto;max-width:720px;position:relative;z-index:1}
+.callout p{font-size:1.2rem;line-height:1.65;margin-bottom:1.6rem}
+.card-link{color:var(--blue);font-weight:600;text-decoration:none;font-size:.88rem;letter-spacing:.04em}
+.card-link:hover{text-decoration:underline}
+</style>
+</head>
+<body>
+<canvas id="flow"></canvas>
+<nav><a class="b" href="../index.html" style="text-decoration:none">RIA<span>WORKFLOW</span></a><a href="https://www.afternic.com/domain/riaworkflow.com">ACQUIRE — $12,500</a></nav>
+
+<header class="article-hero rv">
+  <div class="ey2">Insights</div>
+  <h1>Outsourced Operations vs. In-House: What RIAs Actually Pay for Back-Office Support</h1>
+  <div class="article-meta">Outsourced operations · 8 min read</div>
+</header>
+
+<div class="article-wrap rv">
+  <div class="article-body">
+<p>When a $400 million RIA in Denver hired its first operations manager, the partners did the math on a whiteboard: salary, benefits, software, a desk. About $110,000 a year, all in. Three years later the real number was closer to $200,000 — the hire had become two hires, the software had become four subscriptions, and the partners were still spending Friday afternoons on billing. The alternative they had dismissed as too expensive — handing the back office to a specialist firm — would have cost roughly half as much. Nobody had priced it properly because nobody had priced their own operation properly either. That is the usual shape of this decision: two numbers, both wrong, compared with confidence.</p>
+<h2>What in-house actually costs</h2>
+<p>The honest in-house bill starts with people. Advisor Logistics, an outsourced trading firm, puts the cost of a single in-house trader at $105,000 to $150,000 in base salary, plus about 25 percent for benefits and payroll taxes, plus $20,000 to $100,000 a year in trading and rebalancing software. One person, properly loaded, runs $150,000 to $290,000 a year — and that is one seat, not a back office. A real operations function needs at least three: someone to run trading and reconciliation, someone to run billing and reporting, someone to own compliance operations. At the low end of the range, that is $450,000 a year before office space, before turnover, before the month the key person takes a holiday and nobody else knows how the billing run works.</p>
+<p>The salary figures are the vendor's, and Advisor Logistics sells the alternative, so treat them as a ceiling rather than a quote — but the shape is corroborated from the other side. Schwab's 2025 RIA Benchmarking Study, fielded across 1,288 firms representing more than $2.4 trillion in assets, found the industry will need to hire more than 70,000 new staff over the next five years, before attrition and retirements. Hiring is the industry's binding constraint, and back-office hiring is the hardest part of it: the work is specialized, the talent pool is thin, and the best operations people are the ones every growing firm is trying to poach at the same time. An in-house team is not just a cost. It is a recruiting commitment that never ends.</p>
+<p>There is also the build time. Advisor Logistics notes that setting up a new in-house trading system takes four to eight months before the first trade is placed — configuration, testing, custodian connectivity, compliance sign-off. Eight months of paying for a system that does nothing is a cost that never appears in the salary comparison, and it is the reason firms that decide to build in-house often end up outsourcing anyway, a year later, having paid for both.</p>
+<h2>What outsourcing actually costs</h2>
+<p>Outsourced back-office pricing comes in three currencies, and firms should insist on knowing which one they are being quoted. The first is basis points: Advisor Logistics charges about 5 basis points for outsourced trading and rebalancing across more than 30,000 accounts, against 20 to 50 basis points for a traditional turnkey asset management platform that also takes over investment models. On $500 million in assets, 5 basis points is $250,000 a year; 20 basis points is $1 million. The gap is the price of keeping investment control in-house, and it is the single most important number in the comparison. The second currency is a flat fee: fund-operations provider Fundviews publishes operator fees of 0.30 percent a year for a single-deal vehicle, 0.50 percent for a fund, and 0.25 percent for a family office vehicle, with a $15,000 annual minimum — though that is fund administration, a different service from RIA back-office support, and the two should not be confused. The third currency is hourly: nearshore back-office teams run $13 to $19 per agent hour all-in, against $35 to $48 an hour for a fully loaded US in-house seat, according to CallForce Global — a vendor estimate, built on a Bureau of Labor Statistics mean wage of $22.40 an hour for US customer service representatives, and it should be read as a marketing range rather than a market price.</p>
+<p>Service levels are where the comparison turns from arithmetic to judgment. An outsourced provider brings redundancy — a team, not a person — and institutional memory that survives any single departure. What it cannot bring is the context that lives in one operations manager's head: which client needs a call before a distribution, which advisor hates a particular report format, which custodian contact actually answers the phone. Advisor Logistics claims its service reclaims 9.1 hours a week per advisor. That is a vendor's number, measured by the vendor, and it should be treated as an advertisement until a reference client confirms it. The honest version is narrower: outsourcing removes the work from your payroll. It does not remove it from your responsibility.</p>
+<h2>The threshold where each model wins</h2>
+<p>The pattern across firm sizes is consistent enough to draw a line. Below about $250 million in assets, outsourcing wins on cost almost every time. A firm that size cannot justify three operations salaries, cannot absorb a key-person departure, and cannot negotiate software pricing — and Schwab's data shows 85 percent of all firms already outsource some technology tasks and 83 percent outsource some compliance, so the small firm that outsources is the norm, not the exception. Between $250 million and $1 billion, the answer splits by function: outsource trading and reconciliation, where scale and redundancy matter most, and keep billing, reporting, and client service in-house, where context matters most. Above $1 billion, in-house starts to win on unit cost — the fixed salaries spread across enough assets — but only if the firm invests in the management layer an operations team needs: a chief operating officer, documented processes, and real backup for every seat. A $2 billion firm with one operations hero and no backup has not built an in-house team. It has built a single point of failure with a salary.</p>
+<h2>The counterargument: the case for building</h2>
+<p>The strongest case for in-house is not cost at all. It is control. An outsourced provider serves many firms, and when its priorities conflict with yours — a system outage on your biggest billing day, a compliance change that needs same-day implementation — you are one client among dozens, and your urgency is weighed against theirs. In-house staff answer to you, learn your clients, and carry institutional knowledge that no vendor contract can replicate. There is also the exit problem: a firm that outsources its entire back office for five years loses the ability to bring it back. The knowledge leaves with the vendor, the processes live in the vendor's systems, and insourcing later means rebuilding from zero. Firms that outsource everything eventually discover they have outsourced their ability to judge whether the vendor is doing a good job.</p>
+<p>And the cost case for outsourcing can be overstated. The basis-point fee that looks cheap at $300 million looks expensive at $1.5 billion, because it grows with assets while salaries do not. A 5-basis-point trading fee on $1.5 billion is $750,000 a year — more than a three-person in-house trading desk. The firms that get this decision wrong are usually the ones that made it once, at one size, and never revisited it as they grew.</p>
+<h2>What this means for RIA operators</h2>
+<p>Price both models on the same basis: fully loaded in-house cost — salary, benefits, software, management time, turnover, and the months a new system takes to work — against the outsourced fee at your current assets and at double your current assets, because the fee scales and the salary does not. Outsource the functions where redundancy beats context: trading, reconciliation, and the overnight processes nobody should own alone. Keep the functions where context beats redundancy: billing judgment, client communications, and the compliance decisions that carry your name. And revisit the decision every year at budget time, because the right answer at $250 million is the wrong answer at $1 billion, and the firms that treat outsourcing as a permanent decision are the ones that end up paying a $1.5 billion fee for a $300 million problem — or carrying a $300 million team into a $1.5 billion firm. The back office is not a cost to minimize. It is the machine the whole firm runs on, and the only wrong choice is the one nobody priced.</p>
+<p><em>The definitive source for RIA workflow intelligence is still up for grabs. RIAWorkflow.com is available for acquisition by the company that will own this category — inquiries to info@primedomaincapital.com.</em></p>
+<h2>Sources</h2>
+<ul>
+<li><a href="https://advisorlogistics.com/in-house-trading-and-rebalancing-vs-outsourced-trading/">Outsourced Trading &amp; Portfolio Rebalancing for RIAs vs. In-House</a> — Advisor Logistics</li>
+<li><a href="https://advisorservices.schwab.com/insights-hub/perspectives/ria-benchmarking-study-2025">2025 RIA Benchmarking Study</a> — Charles Schwab</li>
+<li><a href="https://www.fundviewscapital.com/faq">FAQ</a> — Fundviews Capital (fund operator fees)</li>
+<li><a href="https://callforce.global/services/back-office-outsourcing/">Back Office Outsourcing: Nearshore Teams at $13-15/hr</a> — CallForce Global (vendor estimate)</li>
+<li><a href="http://content.schwab.com/web/retail/public/about-schwab/2024-Charles-Schwab-RIA-Benchmarking-Study.pdf">Insights from the 2024 RIA Benchmarking Study</a> — Charles Schwab</li>
+<li><a href="https://www.kitces.com/wp-content/uploads/2018/11/Kitces-Report-Volume-2-2018-How-Financial-Planners-Actually-Do-Financial-Planning.pdf">How Financial Planners Actually Do Financial Planning (Kitces Report, Vol. 2, 2018)</a> — Kitces</li>
+</ul>
+</div>
+</div>
+
+
+<div class="callout rv">
+  <a class="btn btn-b" href="https://www.afternic.com/domain/riaworkflow.com">Buy Now on Afternic</a>
+</div>
+
+<section class="rv">
+  <div class="ey2">Who Builds</div>
+  <div class="aud">
+    <div class="acard"><div class="tag">BUILDER 01</div><h3>Wealthtech SaaS</h3><p>The category-defining brand for an RIA workflow platform. The demo starts at the domain.</p></div>
+    <div class="acard"><div class="tag">BUILDER 02</div><h3>Custodians</h3><p>Schwab, Fidelity, Pershing-class: brand the advisor technology suite around the name advisors search.</p></div>
+    <div class="acard"><div class="tag">BUILDER 03</div><h3>RIA Aggregators</h3><p>Standardize operations across dozens of acquired practices under one workflow brand.</p></div>
+  </div>
+</section>
+
+<section class="rv">
+  <div class="buy">
+    <div class="ey2">Acquisition</div>
+    <div class="pr">$12,500</div>
+    <a class="btn btn-b" href="https://www.afternic.com/domain/riaworkflow.com">Buy Now on Afternic</a>
+    <p style="margin-top:1.6rem;color:#94a3b8;font-size:.9rem"><a href="mailto:info@primedomaincapital.com" style="color:#93c5fd">info@primedomaincapital.com</a></p>
+  </div>
+</section>
+
+<footer>Offered by <strong>Prime Domain Capital</strong> · <a href="mailto:info@primedomaincapital.com">info@primedomaincapital.com</a></footer>
+
+<script>
+const c=document.getElementById('flow'),g=c.getContext('2d');let W,H;const N=[];
+function sz(){W=c.width=innerWidth;H=c.height=innerHeight}sz();addEventListener('resize',sz);
+for(let i=0;i<10;i++)N.push({x:Math.random()*innerWidth,y:Math.random()*innerHeight,r:3+Math.random()*3});
+(function dr(){g.clearRect(0,0,W,H);N.forEach((n,i)=>{n.x+=.6;if(n.x>W+20){n.x=-20;n.y=Math.random()*H}g.fillStyle='rgba(37,99,235,.5)';g.beginPath();g.arc(n.x,n.y,n.r,0,7);g.fill();const nx=N[(i+1)%N.length];g.strokeStyle='rgba(37,99,235,.22)';g.lineWidth=1.5;g.beginPath();g.moveTo(n.x,n.y);g.lineTo(nx.x,nx.y);g.stroke()});requestAnimationFrame(dr)})();
+const io=new IntersectionObserver(e=>e.forEach(n=>{if(n.isIntersecting){n.target.classList.add('on');io.unobserve(n.target)}}),{threshold:.12});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+
+</script>
+<!-- Cloudflare Web Analytics --><script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "1407571ec8bc45c3a082c91096558135"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
